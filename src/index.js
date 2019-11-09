@@ -42,7 +42,7 @@ io.on('connection', (socket) => {
 
     socket.join(user.room)
 
-    socket.emit('message', generateMessage('Admin', 'Welcome'));
+    socket.emit('message', generateMessage('Admin', 'Hi, This is a chat app created by Brian Bawuah.'));
     socket.broadcast.to(user.room).emit('message', generateMessage('Admin',`${user.username} has joined!`));
     io.to(user.room).emit('roomData', {
       room: user.room,
