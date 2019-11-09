@@ -21,6 +21,9 @@ body {
     line-height: 1.4;
     color: #333333;
     font-family: Helvetica, Arial, sans-serif;
+    background: #FAF5FF;
+    height: 95vh;
+    position: relative;
 }
 
 h1 {
@@ -112,13 +115,14 @@ button:disabled {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+    background: #ffffff;
 }
 
 .chat__messages {
     flex-grow: 1;
     padding: 24px 24px 0 24px;
     overflow-y: scroll;
-    height: 75vh;
+    height: 55vh;
 }
 
 /* Message Styles */
@@ -207,8 +211,11 @@ button:disabled {
 
     .chat__messages{
         width: 70vw;
-        border-bottom: 2px solid #D6BCFA;
     } 
+
+    .chat__main{
+        border-bottom: 2px solid #D6BCFA;
+    }
 
     .compose{
         position: absolute;
