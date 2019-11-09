@@ -12,6 +12,9 @@ html {
 
 input {
     font-size: 16px;
+    background: #EDF2F7;
+    font-weight: bolder;
+    color: #2D3748;
 }
 
 body {
@@ -204,6 +207,7 @@ button:disabled {
 
     .chat__messages{
         width: 70vw;
+        border-bottom: 2px solid #D6BCFA;
     } 
 
     .compose{
@@ -213,12 +217,13 @@ button:disabled {
         width: 100%;
         display: grid;
         grid-template-rows: min-content min-content;
-        grid-gap: 1em;
+        grid-gap: .2em;
+        padding: .3em .5em;
     }
 
     .compose form{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: min-content min-content;
         grid-gap: 1em;
         margin: 0;
     }
